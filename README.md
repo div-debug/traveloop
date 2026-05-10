@@ -1,4 +1,4 @@
-Traveloop – Personalized Travel Planning Platform
+**Traveloop – Personalized Travel Planning Platform**
 
 Traveloop is a modern full-stack travel planning web application designed to simplify and personalize the travel planning experience. The platform allows users to create multi-city travel itineraries, manage schedules, estimate budgets, discover destinations and activities, maintain packing checklists, and share travel plans with others.
 
