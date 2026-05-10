@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traveloop | Itinerary View</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <header class="site-header sticky-top glass-backdrop shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <a href="dashboard.html" class="brand fw-bold fs-4 text-primary">Traveloop</a>
+      <nav class="d-none d-lg-flex gap-3">
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="itinerary-builder.html">Builder</a>
+        <a class="nav-link active" href="itinerary-view.html">View</a>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <button id="toggleTheme" class="btn btn-icon btn-outline-secondary"><i class="fas fa-moon"></i></button>
+        <button class="btn btn-primary" onclick="window.print()">Download</button>
+      </div>
+    </div>
+  </header>
+  <main class="py-6">
+    <div class="container">
+      <div class="row g-4 align-items-end mb-4" data-aos="fade-up">
+        <div class="col-md-8">
+          <span class="eyebrow text-sky">Itinerary overview</span>
+          <h2 class="fw-bold">Day-by-day travel timeline</h2>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <button class="btn btn-outline-primary me-2">Calendar view</button>
+          <button class="btn btn-primary">Timeline view</button>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-xl-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card p-4 shadow-sm mb-4">
+            <div class="sticky-top bg-white bg-opacity-90 py-3" style="top: 0; backdrop-filter: blur(12px);">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Paris & Amalfi Coast</h5>
+                  <small class="text-muted">June 10 - 20 · 4 cities · 18 activities</small>
+                </div>
+                <span class="badge bg-primary">Shared</span>
+              </div>
+            </div>
+            <div class="timeline-view mt-4">
+              <div class="timeline-day glass-card p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <strong>Day 1</strong>
+                    <p class="mb-0 text-muted">Arrival in Paris</p>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge bg-sky">Budget $420</span>
+                  </div>
+                </div>
+                <div class="activity-list">
+                  <div class="activity-card p-3 mb-3 rounded-4 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-1">Eiffel Tower dinner</h6>
+                        <p class="small text-muted mb-0">Sunset reservation with city view.</p>
+                      </div>
+                      <span class="text-primary"><i class="fas fa-clock me-1"></i>19:00</span>
+                    </div>
+                  </div>
+                  <div class="activity-card p-3 rounded-4 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-1">Seine river cruise</h6>
+                        <p class="small text-muted mb-0">90-minute luxury boat tour.</p>
+                      </div>
+                      <span class="text-primary"><i class="fas fa-clock me-1"></i>21:30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-day glass-card p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <strong>Day 5</strong>
+                    <p class="mb-0 text-muted">Travel to Amalfi Coast</p>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge bg-sky">Budget $520</span>
+                  </div>
+                </div>
+                <div class="activity-list">
+                  <div class="activity-card p-3 mb-3 rounded-4 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-1">Sea-view hotel check-in</h6>
+                        <p class="small text-muted mb-0">Relax with a welcome cocktail.</p>
+                      </div>
+                      <span class="text-primary"><i class="fas fa-clock me-1"></i>15:00</span>
+                    </div>
+                  </div>
+                  <div class="activity-card p-3 rounded-4 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-1">Sunset cliff walk</h6>
+                        <p class="small text-muted mb-0">Guided stroll along coastal paths.</p>
+                      </div>
+                      <span class="text-primary"><i class="fas fa-clock me-1"></i>18:00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-4 shadow-sm">
+            <h5 class="mb-3">Notes & reminders</h5>
+            <div class="d-flex gap-3 flex-wrap">
+              <span class="badge bg-light text-dark">Bring passport</span>
+              <span class="badge bg-light text-dark">Reserve dinner</span>
+              <span class="badge bg-light text-dark">Pack beachwear</span>
+            </div>
+          </div>
+        </div>
+        <aside class="col-xl-4" data-aos="fade-left" data-aos-delay="150">
+          <div class="glass-card p-4 shadow-sm mb-4">
+            <h5 class="mb-3">Trip summary</h5>
+            <div class="stats-list">
+              <div class="d-flex justify-content-between mb-3"><span>Days</span><strong>10</strong></div>
+              <div class="d-flex justify-content-between mb-3"><span>Cities</span><strong>4</strong></div>
+              <div class="d-flex justify-content-between mb-3"><span>Activities</span><strong>18</strong></div>
+              <div class="d-flex justify-content-between"><span>Average spend</span><strong>$410</strong></div>
+            </div>
+          </div>
+          <div class="glass-card p-4 shadow-sm">
+            <h5 class="mb-3">City grouping</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><strong>Paris</strong><br><small class="text-muted">Days 1 - 4</small></li>
+              <li class="mb-3"><strong>Naples</strong><br><small class="text-muted">Day 5</small></li>
+              <li class="mb-3"><strong>Amalfi</strong><br><small class="text-muted">Days 6 - 8</small></li>
+              <li><strong>Rome</strong><br><small class="text-muted">Days 9 - 10</small></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
