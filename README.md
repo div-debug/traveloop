@@ -208,14 +208,6 @@ Testing can be performed using:
 - Postman for API testing
 - Browser testing for frontend responsiveness
 
-# 📄 License
-
-This project is licensed under the MIT License.
-
-#  Support
-
-If you found this project useful, please give it a ⭐ on GitHub.
-
 - Project Name: Traveloop
 - Technology Stack: HTML, CSS, JavaScript, Django, REST API, SQLite
 
