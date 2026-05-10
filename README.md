@@ -209,5 +209,6 @@ Testing can be performed using:
 - Browser testing for frontend responsiveness
 
 - Project Name: Traveloop
+- Team - ADP^2
 - Technology Stack: HTML, CSS, JavaScript, Django, REST API, SQLite
 
